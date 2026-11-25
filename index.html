@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave | Sound Equipment Rentals</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sound<span>Wave</span></div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#equipment">Equipment</a></li>
+                <li><a href="#booking">Book Equipment</a></li>
+                <li><a href="#checklist">Return Checklist</a></li>
+            </ul>
+
+            <a href="#booking" class="nav-btn">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="small-heading">SOUND YOUR EVENT. YOUR WAY.</p>
+
+            <h1>Everything Your Event<br>
+                Needs to <span>Sound Better.</span>
+            </h1>
+
+            <p class="hero-description">
+                Rent quality speakers, microphones, mixers and stage
+                lights for college events, parties and community functions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#equipment" class="primary-btn">Explore Equipment</a>
+                <a href="#booking" class="secondary-btn">Book Equipment</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-image-text">
+                <span>01</span>
+                <h2>MAKE IT LOUD.</h2>
+                <p>Good sound makes every event better.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature">
+            <h3>05+</h3>
+            <p>Equipment Categories</p>
+        </div>
+
+        <div class="feature">
+            <h3>Fair Pricing</h3>
+            <p>Transparent Daily Rates</p>
+        </div>
+
+        <div class="feature">
+            <h3>Easy Booking</h3>
+            <p>Simple Rental Process</p>
+        </div>
+
+        <div class="feature">
+            <h3>Safe Return</h3>
+            <p>Equipment Checklist</p>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="section" id="equipment">
+        <div class="section-heading">
+            <p class="small-heading">OUR RENTAL COLLECTION</p>
+            <h2>Explore Equipment</h2>
+            <p>Find the right equipment for your next event.</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="speakers">PA Speakers</button>
+            <button class="filter-btn" data-category="mics">Wireless Mics</button>
+            <button class="filter-btn" data-category="mixers">DJ Mixers</button>
+            <button class="filter-btn" data-category="lights">Stage Lights</button>
+            <button class="filter-btn" data-category="cables">Cables</button>
+        </div>
+
+        <div class="equipment-grid">
+
+            <div class="equipment-card" data-category="speakers">
+                <div class="equipment-icon">🔊</div>
+                <p class="category-label">PA SPEAKERS</p>
+                <h3>Professional PA Set</h3>
+                <p class="equipment-description">
+                    Powerful speaker setup for college events and parties.
+                </p>
+                <div class="card-bottom">
+                    <h4>₹1,500 <small>/ day</small></h4>
+                    <button class="add-btn" data-id="1">Add +</button>
+                </div>
+            </div>
+
+            <div class="equipment-card" data-category="mics">
+                <div class="equipment-icon">🎤</div>
+                <p class="category-label">WIRELESS MICS</p>
+                <h3>Wireless Microphone Set</h3>
+                <p class="equipment-description">
+                    Two cordless microphones for speeches and performances.
+                </p>
+                <div class="card-bottom">
+                    <h4>₹600 <small>/ day</small></h4>
+                    <button class="add-btn" data-id="2">Add +</button>
+                </div>
+            </div>
+
+            <div class="equipment-card" data-category="mixers">
+                <div class="equipment-icon">🎚️</div>
+                <p class="category-label">DJ MIXERS</p>
+                <h3>4-Channel Audio Mixer</h3>
+                <p class="equipment-description">
+                    Audio mixing equipment for DJs and live performances.
+                </p>
+                <div class="card-bottom">
+                    <h4>₹1,000 <small>/ day</small></h4>
+                    <button class="add-btn" data-id="3">Add +</button>
+                </div>
+            </div>
+
+            <div class="equipment-card" data-category="lights">
+                <div class="equipment-icon">💡</div>
+                <p class="category-label">STAGE LIGHTS</p>
+                <h3>LED Spotlight Pair</h3>
+                <p class="equipment-description">
+                    LED lighting setup for stages and dance floors.
+                </p>
+                <div class="card-bottom">
+                    <h4>₹800 <small>/ day</small></h4>
+                    <button class="add-btn" data-id="4">Add +</button>
+                </div>
+            </div>
+
+            <div class="equipment-card" data-category="cables">
+                <div class="equipment-icon">🔌</div>
+                <p class="category-label">CABLES</p>
+                <h3>Audio Cable Kit</h3>
+                <p class="equipment-description">
+                    Essential audio connection cables for your setup.
+                </p>
+                <div class="card-bottom">
+                    <h4>₹250 <small>/ day</small></h4>
+                    <button class="add-btn" data-id="5">Add +</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Rental Calculator -->
+    <section class="calculator-section" id="calculator">
+        <div class="calculator-content">
+            <p class="small-heading">PLAN YOUR EVENT</p>
+            <h2>Rental Cost Calculator</h2>
+            <p>Check your estimated rental charges and security deposit.</p>
+
+            <div class="calculator-box">
+
+                <div class="calc-row">
+                    <label>Selected Equipment</label>
+                    <strong id="selected-count">0 items</strong>
+                </div>
+
+                <div class="calc-row">
+                    <label>Event Duration</label>
+                    <select id="duration">
+                        <option value="1">1-Day Event</option>
+                        <option value="3">3-Day Weekend Festival</option>
+                    </select>
+                </div>
+
+                <div class="calc-row">
+                    <label>Rental Amount</label>
+                    <strong id="rental-amount">₹0</strong>
+                </div>
+
+                <div class="calc-row">
+                    <label>Security Deposit (20%)</label>
+                    <strong id="deposit-amount">₹0</strong>
+                </div>
+
+                <hr>
+
+                <div class="calc-total">
+                    <span>Total Estimated Amount</span>
+                    <h2 id="total-amount">₹0</h2>
+                </div>
+
+                <p class="calc-note">
+                    Security deposit is refundable after equipment inspection.
+                </p>
+
+                <a href="#booking" class="primary-btn full-btn">
+                    Continue to Booking
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section" id="booking">
+        <div class="section-heading">
+            <p class="small-heading">RESERVE YOUR EQUIPMENT</p>
+            <h2>Book Your Equipment</h2>
+            <p>Enter your event details to create a booking request.</p>
+        </div>
+
+        <form id="booking-form" class="booking-form">
+
+            <div class="form-group">
+                <label for="customer-name">Your Name</label>
+                <input type="text" id="customer-name"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customer-email">Email Address</label>
+                <input type="email" id="customer-email"
+                    placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="venue">Venue Location</label>
+                <input type="text" id="venue"
+                    placeholder="Enter event venue" required>
+            </div>
+
+            <div class="form-group full-width">
+                <label>Selected Equipment</label>
+                <div id="booking-summary" class="booking-summary">
+                    No equipment selected yet.
+                </div>
+            </div>
+
+            <div class="technician-option full-width">
+                <div>
+                    <h3>Need a Sound Technician?</h3>
+                    <p>Get assistance with equipment setup at your event.</p>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox" id="technician">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Additional Requirements</label>
+                <textarea id="message" rows="4"
+                    placeholder="Any additional information (optional)"></textarea>
+            </div>
+
+            <div class="booking-total full-width">
+                <span>Estimated Booking Amount</span>
+                <h2 id="booking-total">₹0</h2>
+            </div>
+
+            <button type="submit" class="primary-btn full-width submit-btn">
+                Submit Booking Request
+            </button>
+
+            <p id="booking-message" class="success-message full-width"></p>
+
+        </form>
+    </section>
+
+    <!-- Return Checklist -->
+    <section class="checklist-section" id="checklist">
+        <div class="section-heading">
+            <p class="small-heading">EQUIPMENT VERIFICATION</p>
+            <h2>Equipment Return Checklist</h2>
+            <p>Verify the condition of rented equipment before returning it.</p>
+        </div>
+
+        <div class="checklist-box">
+
+            <div class="checklist-header">
+                <div>
+                    <h3>Return Inspection</h3>
+                    <p>Check each item after inspecting it.</p>
+                </div>
+                <span id="progress-text">0% Completed</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+
+            <div class="checklist-items">
+
+                <label class="check-item">
+                    <input type="checkbox" class="return-check">
+                    <span>All speakers returned without visible damage.</span>
+                </label>
+
+                <label class="check-item">
+                    <input type="checkbox" class="return-check">
+                    <span>Microphones returned and checked.</span>
+                </label>
+
+                <label class="check-item">
+                    <input type="checkbox" class="return-check">
+                    <span>All audio cables returned.</span>
+                </label>
+
+                <label class="check-item">
+                    <input type="checkbox" class="return-check">
+                    <span>No visible cuts or damage on cables.</span>
+                </label>
+
+                <label class="check-item">
+                    <input type="checkbox" class="return-check">
+                    <span>Audio mixer returned in working condition.</span>
+                </label>
+
+                <label class="check-item">
+                    <input type="checkbox" class="return-check">
+                    <span>Stage lights and accessories returned.</span>
+                </label>
+
+                <label class="check-item">
+                    <input type="checkbox" class="return-check">
+                    <span>All rented accessories and parts accounted for.</span>
+                </label>
+
+            </div>
+
+            <button id="generate-checklist" class="primary-btn full-btn">
+                Generate Return Report
+            </button>
+
+            <div id="checklist-result" class="checklist-result"></div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Beat<span>Rent.</span></div>
+            <p>Making every community event sound better.</p>
+        </div>
+
+        <p class="copyright">
+            © 2026 BeatRent. College Semester Project.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
